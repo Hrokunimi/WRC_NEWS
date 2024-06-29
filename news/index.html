@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NEWS | WRC.com</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- for responsive  -->
+        <i class='bx bx-menu' id="show_menu" onclick="responsive_nav_bar()"></i>
+        <img src="/all_photo/photo_1.png" alt="img-1-for-responcive" id="photo_1_f_responsive">
+        <i class='bx bx-search-alt-2' id="search_1_f_responsive"></i>
+        
+        <!--  -->
+        <nav>
+            <!-- left side -->
+            <div class="leftside_nav_bar">
+                <a href="/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                <ul>
+                    <a href="/index.html"><li>Home</li></a>
+                    <li style="color: orangered;">News</li>
+                    <a href="/calendar/index.html"><li>Calendar</li></a>
+                    <a href="/results/index.html"><li>Result & Standings</li></a>
+                    <li>Team & Drivers</li>
+                    <li>Live Timing</li>
+                    <li>Gaming</li>
+                    <li>Watch</li>
+                </ul>
+            </div>
+
+            <!-- right side -->
+            <div class="rightside_nav_bar">
+                <a href=""><img src="/all_photo/photo_2.png" alt="photo_2" id="photo_2"></a>
+                <!-- for lenguage chose -->
+                <select name="lenguage" id="change_language">
+                    <option value="lenguage">EN</option>
+                    <option value="lenguage">FR</option>
+                    <option value="lenguage">ES</option>
+                </select>
+                <i class='bx bx-search-alt-2' id="search_1" onclick="search_click()"></i>
+                <i class='bx bx-dots-vertical-rounded' id="dots_1" onclick="dote_div()"></i>
+            </div>
+            <input type="text" id="hearder_search" placeholder="Search Drivers, Teams and more... "> 
+            <button id="button_for_close" onclick="close_X_1()">X</button>
+            <!-- for search  -->
+        </nav>
+
+        </div>
+        <!-- for right siede 3 doted icon -->
+        <div id="doted_div">
+            <ul>
+                <li class="doted_d">About WRC</li>
+                <li class="doted_d">Accreditation</li>
+                <li class="doted_d">Beyond Rally</li>
+                <li class="doted_d">Broudcast Guide</li>
+                <li class="doted_d">Championship</li>
+                <li class="doted_d">Factbook</li>
+                <li class="doted_d">FIA</li>
+                <li class="doted_d">Partners</li>
+                <li class="doted_d">Podcasts</li>
+                <li class="doted_d">WRC History</li>
+                <li class="doted_d">WRC Promoter</li>
+            </ul>
+        </div>
+    </header>
+    <!-- for responsive nav bar -->
+    <div id="right_side_nav_responsive">
+        <button id="nav_close_bt" onclick="nav_close()">X</button>
+        <ul>
+            <li><span class="span_for_icon"><i class='bx bxs-home'></i></span>Home</li>
+            <li><span class="span_for_icon"><i class='bx bx-menu-alt-left'></i></span>News</li>
+            <li><span class="span_for_icon"><i class='bx bx-calendar'></i></span>Calendar</li>
+            <li><span class="span_for_icon"><i class='bx bxs-trophy' ></i></span>Results & Standings</li>
+            <li><span class="span_for_icon"><i class='bx bxs-car'></i></span>Teams & Drivers</li>
+            <li><span class="span_for_icon"><i class='bx bx-time-five'></i></span>Live Timing</li>
+            <li>Gaming</li>
+            <li>Watch </li>
+            <li>About WRC</li>
+            <li>Accreditation</li>
+            <li>Beyond Rally</li>
+            <li>Broadcast Guide</li>
+            <li>Championships</li>
+            <li>Factbook</li>
+            <li>FIA</li>
+            <li>Partners</li>
+            <li>Podcasts</li>
+            <li>WRC History </li>
+            <li>WRC Promoter</li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+    <!-- container 1 -->
+    <div class="container_1_main">
+        <h1>Explore by category</h1>
+
+        <!-- click for switch -->
+        <i class='bx bxs-chevron-left-circle' onclick="left_click()"></i>
+        <i class='bx bxs-chevron-right-circle' onclick="right_click()" ></i>
+
+        <div class="container_1_main_2">
+
+            <div id="container_1_div_1">
+                
+                <div class="container_1_div_1_photos">
+                    <img src="/all_photo/photo-36.png" alt="photo-36">
+                </div>
+                <div class="container_1_div_1_photos">
+                    <img src="/all_photo/photo-37.png" alt="photo-37">
+                </div>
+                <div class="container_1_div_1_photos">
+                    <img src="/all_photo/photo-38.png" alt="photo-38">
+                </div>
+                <div class="container_1_div_1_photos">
+                    <img src="/all_photo/photo-39.png" alt="photo-39">
+                </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div id="container_1_div_2">
+
+                <div class="container_1_div_1_photos">
+                    <img src="/all_photo/photo-40.png" alt="photo-40">
+                </div>
+                <div class="container_1_div_1_photos">
+                    <img src="/all_photo/photo-41.png" alt="photo-41">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- containe 3 -->
+
+    <div class="container_3">
+        <h2>Latest News</h2>
+
+        <div id="container_3_1">
+            <div class="container_divs">
+                <img src="/all_photo/photo-42.jpg" alt="photo-42">
+                <p>TUE 11 JUN 2024</p>
+                <h3>Evans: Upcoming rallies to suit Yaris</h3>
+                <h5>Toyota Gazoo Racing’s Elfyn Evans is positive the upcoming fast gravel events will demonstrate the strength of the Toyota GR Yaris Rally1, as he looks to continue to bridge the gap to championship leader Thierry Neuville.</h5>
+            </div>
+            <div class="container_divs">
+                <img src="/all_photo/photo-43.jfif" alt="photo-43">
+                <p>MON 10 JUN 2024</p>
+                <h3>Rossel: Confidence levels are ‘crazy’</h3>
+                <h5>Current WRC2 championship leader Yohan Rossel spent Saturday in Sardinia demonstrating why he might just be the world’s most in-form rally driver. The numbers show why.</h5>
+            </div>
+            <div class="container_divs">
+                <img src="/all_photo/photo-44.jpg" alt="photo-44">
+                <p>SAT 8 JUN 2024</p>
+                <h3>Italy breakthrough fuels Munster's Poland ambitions</h3>
+                <h5>Having scored his best-ever FIA World Rally Championship finish at last week’s Rally Italia Sardegna, Grégoire Munster is looking to keep that momentum moving into this month’s ORLEN 80th Rally Poland.</h5>
+            </div>
+            <div class="container_divs">
+                <img src="/all_photo/photo-45.jpg" alt="photo-45">
+                <p>FRI 7 JUN 2024</p>
+                <h3>Reliving some of the closest finishes in WRC history</h3>
+                <h5>Toyota driver Elfyn Evans says he could still take positives from a tricky Rally Italia Sardegna last week.</h5>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    
+        <!-- containe 4 -->
+
+        <div class="container_4">
+    
+            <div id="container_4_1">
+
+                <div class="container_divs">
+                    <img src="/all_photo/photo-46.jpg" alt="photo-46">
+                    <p>FRI 7 JUN 2024</p>
+                    <h3>Reliving some of the closest finishes in WRC history</h3>
+                    <h5>While rallying is often considered an endurance sport, these razor-thin victory margins are prime examples of the intense competition that defines the FIA World Rally Championship.</h5>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-48.jpg" alt="photo-48">
+                    <p>THU 6 JUN 2024</p>
+                    <h3>Young talent shines in WRC as Pajari and Sesks highlight next generation</h3>
+                    <h5>Step forward and step-up Sami Pajari.</h5>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-49.jpg" alt="photo-49">
+                    <p>THU 6 JUN 2024</p>
+                    <h3>Rally Italia Sardegna Quiz</h3>
+                    <h5>How closely were you following the action at Rally Italia Sardegna? Test your knowledge with our post-rally quiz. </h5>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-50.jpg" alt="photo-50">
+                    <p>THU 6 JUN 2024</p>
+                    <h3>WRC Promoter support helps Pajari realise Rally1 dream</h3>
+                    <h5>In collaboration with WRC Promoter and TOYOTA GAZOO Racing, Sami Pajari will become the latest driver to debut at the WRC's highest level, with the 22-year-old set to contest next month's Tet Rally Latvia in a Toyota GR Yaris Rally1 Hybrid.</h5>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+    <!-- containe 5 -->
+
+    <div class="container_5">
+
+        <div id="container_5_1">
+            <div class="container_divs">
+                <img src="/all_photo/photo-51.jpg" alt="photo-51">
+                <p>WED 5 JUN 2024</p>
+                <h3>Mixed feelings for Neuville after Italy rollercoaster ride</h3>
+                <h5>Thierry Neuville has emerged from Rally Italia Sardegna with mixed feelings after a rollercoaster week through round six.</h5>
+            </div>
+            <div class="container_divs">
+                <img src="/all_photo/photo-52.jpg" alt="photo-52">
+                <p>WED 5 JUN 2024</p>
+                <h3>Entry List: ORLEN 80th Rally Poland</h3>
+                <h5>The entry list for the ORLEN 80th Rally Poland has been released, with stars including eight-time FIA World Rally Champion Sébastien Ogier set to contest the returning event.</h5>
+            </div>
+            <div class="container_divs">
+                <img src="/all_photo/photo-53.jpg" alt="photo-53">
+                <p>TUE 4 JUN 2024</p>
+                <h3>Latvala: ‘Karma’ cost Ogier victory in Italy</h3>
+                <h5>Toyota team principal Jari-Matti Latvala believes that karma was at play during last week’s Rally Italia Sardegna, where Sébastien Ogier was deprived of victory in the very last stage.</h5>
+            </div>
+            <div class="container_divs">
+                <img src="/all_photo/photo-54.jpg" alt="photo-54">
+                <p>MON 3 JUN 2024</p>
+                <h3>Ogier moves forward from Italy WRC agony</h3>
+                <h5>Sébastien Ogier says he can still see the positives of last week’s Rally Italy Sardegna, despite losing the win to rival Ott Tänak on the final stage.</h5>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+
+        <!-- containe 6 -->
+
+        <div class="container_6">
+    
+            <div id="container_6_1">
+                <div class="container_divs">
+                    <img src="/all_photo/photo-55.jpg" alt="photo-55">
+                    <p>SUN 2 JUN 2024</p>
+                    <h3>Pajari basks in WRC2 glory at Rally Italia Sardegna</h3>
+                    <h5>Finland’s Sami Pajari has claimed his first WRC2 win using Toyota machinery, managing a comfortable lead through Sunday’s final four stages at Rally Italia Sardegna.</h5>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-56.jpg" alt="photo-56">
+                    <p>SUN 2 JUN 2024</p>
+                    <h3>Tänak claims shock Italy win in joint-closest WRC finish</h3>
+                    <h5>Ott Tänak claimed a shock victory at Rally Italia Sardegna on Sunday afternoon after late agony for long-time leader Sébastien Ogier. </h5>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-57.jpeg" alt="photo-57">
+                    <p>SAT 1 JUN 2024</p>
+                    <h3>Pajari leads but Rossel stars in WRC2 on Saturday</h3>
+                    <h5>Sami Pajari extended his WRC2 lead to almost one minute at Rally Italia Sardegna, but it was championship leader Yohan Rossel who was raising eyebrows on Saturday.</h5>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-58.jpg" alt="photo-58">
+                    <p>FRI 7 JUN 2024</p>
+                    <h3>Reliving some of the closest finishes in WRC history</h3>
+                    <h5>Toyota driver Elfyn Evans says he could still take positives from a tricky Rally Italia Sardegna last week.</h5>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+
+<!-- containe 7 -->
+
+<div class="container_7">
+
+    <div id="container_7_1">
+        <div class="container_divs">
+            <img src="/all_photo/photo-59.jpg" alt="photo-59">
+            <p>TUE 11 JUN 2024</p>
+            <h3>Evans: Upcoming rallies to suit Yaris</h3>
+            <h5>Toyota Gazoo Racing’s Elfyn Evans is positive the upcoming fast gravel events will demonstrate the strength of the Toyota GR Yaris Rally1, as he looks to continue to bridge the gap to championship leader Thierry Neuville.</h5>
+        </div>
+        <div class="container_divs">
+            <img src="/all_photo/photo-60.jpg" alt="photo-60">
+            <p>MON 10 JUN 2024</p>
+            <h3>Rossel: Confidence levels are ‘crazy’</h3>
+            <h5>Current WRC2 championship leader Yohan Rossel spent Saturday in Sardinia demonstrating why he might just be the world’s most in-form rally driver. The numbers show why.</h5>
+        </div>
+        <div class="container_divs">
+            <img src="/all_photo/photo-61.jpeg" alt="photo-61">
+            <p>SAT 8 JUN 2024</p>
+            <h3>Italy breakthrough fuels Munster's Poland ambitions</h3>
+            <h5>Having scored his best-ever FIA World Rally Championship finish at last week’s Rally Italia Sardegna, Grégoire Munster is looking to keep that momentum moving into this month’s ORLEN 80th Rally Poland.</h5>
+        </div>
+        <div class="container_divs">
+            <img src="/all_photo/photo-62.jpg" alt="photo-62">
+            <p>FRI 7 JUN 2024</p>
+            <h3>Reliving some of the closest finishes in WRC history</h3>
+            <h5>Toyota driver Elfyn Evans says he could still take positives from a tricky Rally Italia Sardegna last week.</h5>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+
+   <!-- footer -->
+
+   <footer>
+    <div class="footer_1">
+        <img src="/all_photo/photo-24.png" alt="photo-24">
+        <img src="/all_photo/photo-25.png" alt="photo-25">
+        <img src="/all_photo/photo-26.png" alt="photo-26">
+        <img src="/all_photo/photo-27.png" alt="photo-27">
+        <img src="/all_photo/photo-28.png" alt="photo-28">
+        <img src="/all_photo/photo-29.png" alt="photo-29">
+        <img src="/all_photo/photo-30.png" alt="photo-30">
+        <img src="/all_photo/photo-31.png" alt="photo-31">
+        <img src="/all_photo/photo-32.png" alt="photo-32">
+        <img src="/all_photo/photo-33.png" alt="photo-33">
+        <img src="/all_photo/photo-34.png" alt="photo-34">
+        <img src="/all_photo/photo-35.png" alt="photo-35">
+    </div>
+
+    <div class="line_div"></div>
+
+    <div class="footer_2">
+        <h4>Contact Us</h4>
+        <h4>Terms & Conditions</h4>
+        <h4>Privacy Policy</h4>
+        <h4>Legal Notice</h4>
+        <h4>Cookie Settings</h4>
+        <h4>Jobs</h4>
+        <h4>Accreditation</h4>
+        <h4>Media Room</h4>
+        <h4>Broadcast Guide</h4>
+        <h4>Partners & Advertising</h4>
+    </div>
+
+    <div class="footer_3">
+        <p>© WRC Promoter GmbH 2014 - 2024</p>
+
+        <div class="footer_3_2">
+            <a href="https://www.facebook.com/WorldRally/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/officialwrc/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.tiktok.com/@wrc"><i class='bx bxl-tiktok' ></i></a>
+            <a href="https://www.youtube.com/@wrc"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://x.com/OfficialWRC"><i class='bx bxl-twitter' ></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="/news/app.js"></script>
+</body>
+</html>

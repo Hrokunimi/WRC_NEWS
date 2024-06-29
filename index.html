@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home | WRC.com</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- for responsive  -->
+        <i class='bx bx-menu' id="show_menu" onclick="responsive_nav_bar()"></i>
+        <img src="/all_photo/photo_1.png" alt="img-1-for-responcive" id="photo_1_f_responsive">
+        <i class='bx bx-search-alt-2' id="search_1_f_responsive"></i>
+        
+        <!--  -->
+        <nav>
+            <!-- left side -->
+            <div class="leftside_nav_bar">
+                <a href="/mian_page/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                <ul>
+                    <li style="color: orangered;">Home</li>
+                    <a href="/news/index.html"><li>News</li></a>
+                    <a href="/calendar/index.html"><li>Calendar</li></a>
+                    <a href="/results/index.html"><li>Result & Standings</li></a>
+                    <li>Team & Drivers</li>
+                    <li>Live Timing</li>
+                    <li>Gaming</li>
+                    <li>Watch</li>
+                </ul>
+            </div>
+                        <!-- left side georgian lenguage -->
+                        <div class="leftside_nav_bar_GE">
+                            <a href="/mian_page/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                            <ul>
+                                <li style="color: orangered;">მთავარი</li>
+                                <a href="/news/index.html"><li >სიახლეები</li></a>
+                                <a href="/calendar/index.html"><li >Კალენდარი</li></a>
+                                <a href="/results/index.html"><li>შედეგიები</li></a>
+                                <li>გუნდები </li>
+                                <li>პირდაპირი ეთერი</li>
+                                <li>თამაში</li>
+                                <li>ყურება</li>
+                            </ul>
+                        </div>
+
+            <!-- right side -->
+            <div class="rightside_nav_bar">
+                <a href=""><img src="/all_photo/photo_2.png" alt="photo_2" id="photo_2"></a>
+                <!-- for lenguage chose -->
+                <select name="lenguage" id="change_language">
+                    <option value="English">EN</option>
+                    <option value="Georgian">GE</option>
+                </select>
+                <i class='bx bx-search-alt-2' id="search_1" onclick="search_click()"></i>
+                <i class='bx bx-dots-vertical-rounded' id="dots_1" onclick="dote_div()"></i>
+            </div>
+            <input type="text" id="hearder_search" placeholder="Search Drivers, Teams and more... "> 
+            <button id="button_for_close" onclick="close_X_1()">X</button>
+            <!-- for search  -->
+        </nav>
+
+        </div>
+        <!-- for right siede 3 doted icon -->
+        <div id="doted_div">
+            <ul>
+                <li class="doted_d">About WRC</li>
+                <li class="doted_d">Accreditation</li>
+                <li class="doted_d">Beyond Rally</li>
+                <li class="doted_d">Broudcast Guide</li>
+                <li class="doted_d">Championship</li>
+                <li class="doted_d">Factbook</li>
+                <li class="doted_d">FIA</li>
+                <li class="doted_d">Partners</li>
+                <li class="doted_d">Podcasts</li>
+                <li class="doted_d">WRC History</li>
+                <li class="doted_d">WRC Promoter</li>
+            </ul>
+        </div>
+        
+    </header>
+    <!-- for responsive nav bar -->
+    <div id="right_side_nav_responsive">
+        <button id="nav_close_bt" onclick="nav_close()">X</button>
+        <ul>
+            <li><span class="span_for_icon"><i class='bx bxs-home'></i></span>Home</li>
+            <li><span class="span_for_icon"><i class='bx bx-menu-alt-left'></i></span>News</li>
+            <li><span class="span_for_icon"><i class='bx bx-calendar'></i></span>Calendar</li>
+            <li><span class="span_for_icon"><i class='bx bxs-trophy' ></i></span>Results & Standings</li>
+            <li><span class="span_for_icon"><i class='bx bxs-car'></i></span>Teams & Drivers</li>
+            <li><span class="span_for_icon"><i class='bx bx-time-five'></i></span>Live Timing</li>
+            <li>Gaming</li>
+            <li>Watch </li>
+            <li>About WRC</li>
+            <li>Accreditation</li>
+            <li>Beyond Rally</li>
+            <li>Broadcast Guide</li>
+            <li>Championships</li>
+            <li>Factbook</li>
+            <li>FIA</li>
+            <li>Partners</li>
+            <li>Podcasts</li>
+            <li>WRC History </li>
+            <li>WRC Promoter</li>
+        </ul>
+    </div>
+    <!--  -->
+
+
+    <!-- runing text  -->
+    <div class="for_runing_text_1">
+        <marquee behavior="" direction="left" style="z-index: 0;">
+            <p class="p_for_rining">Rally Results<span>Portugal Rally Results</span></p>
+            <p class="p_for_rining">Rally.TV newsletter<span>Sign up to get the free Rally.TV Newsletter!</span></p>
+            <p class="p_for_rining">Live Stream ScheduleWatch<span> the Rally live at Rally.TV</span></p>
+            <p class="p_for_rining">Upcoming Rally<span> WRC Rally Italia Sardegna 🇮🇹</span></p>
+            <p class="p_for_rining">Championship Standings<span> Check out the Standings ahead of Round 6</span></p>
+        </marquee>
+    </div>
+        <!-- runing text Georgian  -->
+        <div class="for_runing_text_1_GE">
+            <marquee behavior="" direction="left" style="z-index: 0;">
+                <p class="p_for_rining">რალის შედეგები<span>პორტუგალიის რალის შედეგები</span></p>
+                <p class="p_for_rining">Rally.TV ბიულეტენი<span>დარეგისტრირდით, რომ მიიღოთ უფასო Rally.TV ნიუსები!</span></p>
+                <p class="p_for_rining">პირდაპირი სტრიმინგის განრიგი<span>აქცია პირდაპირ ეთერში Rally.TV</span></p>
+                <p class="p_for_rining">მომავალი რალი<span> რალი იტალია</span></p>
+                <p class="p_for_rining">ჩემპიონატის ცხრილი<span> შეამოწმეთ სატურნირო მდგომარეობა მე-6 ტურის წინ</span></p>
+            </marquee>
+        </div>
+    <!-- maine container "photos" -->
+    <div id="main_container_1">
+        <div class="loading"></div>
+    </div>
+
+    
+    <!-- container 2 -->
+    <div class="container_2_main">
+        <h2>Rallies</h2>
+
+        <!-- click for switch -->
+        <i class='bx bxs-chevron-left-circle' onclick="left_click()"></i>
+        <i class='bx bxs-chevron-right-circle' onclick="right_click()" ></i>
+
+        <div class="container_2_main_2">
+
+            <div id="container_2_div_1">
+                
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo_6.jpg" alt="photo-6">
+                    <p>WED 24 - SUN 28 JAN 2024</p>
+                    <h3>Rally Monte-Carlo</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-7.jpg" alt="photo-7">
+                    <p>THU 15 - SUN 18 FEB 2024</p>
+                    <h3>WRC Rally Sweden</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-8.jpg" alt="photo-8">
+                    <p>WED 27 - SUN 31 MAR 2024</p>
+                    <h3>WRC Safari Rally Kenya</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-9.jpg" alt="photo-9">
+                    <p>THU 18 - SUN 21 APR 2024</p>
+                    <h3>WRC Croatia Rally</h3>
+                </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div id="container_2_div_2">
+
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-10.jpg" alt="photo_10">
+                    <p>THU 9 - SUN 12 MAY 2024</p>
+                    <h3>WRC Vodafone Rally de Portugal</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-11.jpg" alt="photo-11">
+                    <p>THU 30 - SUN 2 JUN 2024</p>
+                    <h3>WRC Rally Italia Sardegna</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-12.jpg" alt="photo-12">
+                    <p>THU 27 - SUN 30 JUN 2024</p>
+                    <h3>WRC ORLEAN 80th Rally Poland</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-13.jpg" alt="photo-12">
+                    <p>THU 18 - SUN 21 JUL 2024</p>
+                    <h3>WRC Tet Rally Latvia</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Georgian Version -->
+
+        <div class="container_2_main_2_GE">
+            
+            <div id="container_2_div_1">
+                
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo_6.jpg" alt="photo-6">
+                    <p>ოთხ 24 - კვი 28 იანვარი 2024</p>
+                    <h3>რალი მონტე-კარლო</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-7.jpg" alt="photo-7">
+                    <p>ხუთ 15 - კვი 18 თებერვალი 2024 წ</p>
+                    <h3>რალი შვედეთი</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-8.jpg" alt="photo-8">
+                    <p>ოთხ 27 - კვი 31 მარტი 2024 წ</p>
+                    <h3>რალი კენია</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-9.jpg" alt="photo-9">
+                    <p>ხუთ 18 - კვი 21 აპრილი 2024 წ</p>
+                    <h3>ხორვატიის რალი</h3>
+                </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div id="container_2_div_2">
+
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-10.jpg" alt="photo_10">
+                    <p>ხუთ 9 - კვი 12 მაისი 2024 წ</p>
+                    <h3>პორტუგალიის რალი</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-11.jpg" alt="photo-11">
+                    <p>ხუთ 30 - კვი 2 ივნისი 2024 წ</p>
+                    <h3>იტალიის რალი</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-12.jpg" alt="photo-12">
+                    <p>ხუთ 27 - კვი 30 ივნისი 2024 წ</p>
+                    <h3>ორლეანის 80-ე რალი პოლონეთი</h3>
+                </div>
+                <div class="container_2_div_1_photos">
+                    <img src="/all_photo/photo-13.jpg" alt="photo-12">
+                    <p>ხუთ 18 - კვი 21 ივლისი 2024 წ</p>
+                    <h3>ლატვიის რალი</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- containeer 3 -->
+
+    <div class="container_3_main">
+        <h2>Latest Podcasts</h2>
+
+        <div class="container_3_main_2">
+
+            <div id="container_3_div_1">
+                
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-14.jpg" alt="photo-14">
+                    <p>THU 9 MAY 2024</p>
+                    <h3>WRC Backstories: Christian Loriaux</h3>
+                    <p>Packing a bag and moving from Belgium to UK on a whim, Christian Loriaux knew where he needed to be if he were to make it in the world of motorsport.</p>
+                </div>
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-15.jpg" alt="photo-15">
+                    <p>MON 25 MAR 2024</p>
+                    <h3>WRC Backstories: Reeta Hämäläinen</h3>
+                    <p>Leading the positive trend of Finnish female co-drivers competing at the highest levels of rallying is Reeta Hämäläinen. Competing at national level for a numbers of years.</p>
+                </div>
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-16.jpg" alt="photo-16">
+                    <p>WED 28 FEB 2024</p>
+                    <h3>WRC Backstories: Adrien Fourmaux</h3>
+                    <p>Thrust into a World Rally Car at age 25, a head-turning fifth on debut suggested that Adrien Fourmaux had the rallying world at his fingertips.</p>
+                </div>
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-17.jpg" alt="photo-17">
+                    <p>WED 17 JAN 2024</p>
+                    <h3>WRC Backstories: Luis Moya</h3>
+                    <p>With over 150 WRC starts and two world championship titles next to his name, it was only a matter of time before Luis Moya stepped into the studio with Becs Williams.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+            <!-- containeer 3  georgian version-->
+
+    <div class="container_3_main_GE">
+        <h2>უახლესი პოდკასტი</h2>
+
+        <div class="container_3_main_2">
+
+            <div id="container_3_div_1">
+                
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-14.jpg" alt="photo-14">
+                    <p>2024 წლის 9 მაისი ხუთშაბათი</p>
+                    <h3>კრისტიან ლორიას იასტორიები</h3>
+                    <p>ჩაალაგა ჩანთა და გადავიდა ბელგიიდან დიდ ბრიტანეთში ახირებულად, კრისტიან ლორიომ იცოდა, სად უნდა ყოფილიყო, თუ მოტოსპორტის სამყაროში მოხვედრას აპირებდა.</p>
+                </div>
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-15.jpg" alt="photo-15">
+                    <p>ორშაბათი 2024 წლის 25 მარტი</p>
+                    <h3>რეეტა ჰამალაინენი სიტორიები</h3>
+                    <p>ფინელი ქალი თანამძღოლების პოზიტიური ტენდენციის ლიდერი რალის უმაღლეს დონეზე ასპარეზობს, არის რეეტა ჰამალაინენი. რამდენიმე წელია ეროვნულ დონეზე ასპარეზობს.</p>
+                </div>
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-16.jpg" alt="photo-16">
+                    <p>ოთხშაბათი 2024 წლის 28 თებერვალი</p>
+                    <h3>ედრიენ ფორმო იასტორიები</h3>
+                    <p>25 წლის ასაკში მსოფლიო რალის მანქანაში , პირველი მეხუთე ადგილის დებიუტზე იავრაუდა, რომ ადრიენ ფურმოს რალის სამყარო ხელთ ჰქონდა.</p>
+                </div>
+                <div class="container_3_div_1_photos">
+                    <img src="/all_photo/photo-17.jpg" alt="photo-17">
+                    <p>ოთხშაბათი 17 იან 2024</p>
+                    <h3>ლუის მოიას იასტორიები</h3>
+                    <p>რალის-ის 150-ზე მეტი სტარტი და ორი მსოფლიო ჩემპიონის ტიტული მის სახელთან ერთად, მხოლოდ დროის საკითხი იყო ლუის მოია სტუდიაში ბექს უილიამსთან ერთად.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contrainer 4 -->
+
+    <div class="container_4">
+        <img src="/all_photo/photo-18.jpg" alt="photo-18">
+    </div>
+
+
+    <!-- containeer 5 -->
+
+    <div class="container_5_main">
+        <h2>WRC Latest News</h2>
+
+        <div class="container_5_main_2">
+            
+            <div id="container_5_div_1">
+                
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-19.jpg" alt="photo-19">
+                    <p>SAT 8 JUN 2024</p>
+                    <h3>Italy breakthrough fuels Munster's Poland ambitions</h3>
+                    <p>Having scored his best-ever FIA World Rally Championship finish at last week’s Rally Italia Sardegna, Grégoire Munster is looking to keep that momentum moving into this month’s ORLEN 80th Rally Poland.</p>
+                </div>
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-20.jpg" alt="photo-20">
+                    <p>FRI 7 JUN 2024</p>
+                    <h3>Evans takes positives from Italy outing</h3>
+                    <p>Toyota driver Elfyn Evans says he could still take positives from a tricky Rally Italia Sardegna last week.</p>
+                </div>
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-21.jpg" alt="photo-21">
+                    <p>FRI 7 JUN 2024</p>
+                    <h3>Reliving some of the closest finishes in WRC history</h3>
+                    <p>While rallying is often considered an endurance sport, these razor-thin victory margins are prime examples of the intense competition that defines the FIA World Rally Championship.</p>
+                </div>
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-22.jpg" alt="photo-22">
+                    <p>THU 6 JUN 2024</p>
+                    <h3>Young talent shines in WRC as Pajari and Sesks highlight next generation</h3>
+                    <p>Step forward and step-up Sami Pajari.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- containeer 5 georgian version -->
+    
+    <div class="container_5_main_GE">
+        <h2>რალის უახლესი ამბები</h2>
+
+        <div class="container_5_main_2">
+            
+            <div id="container_5_div_1">
+                
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-19.jpg" alt="photo-19">
+                    <p>შაბათი, 2024 წლის 8 ივნისი</p>
+                    <h3>იტალიის გარღვევა აძლიერებს მანსტერის პოლონეთის ამბიციებს</h3>
+                    <p>გასულ კვირას Rally Italia Sardegna-ზე თავისი საუკეთესო FIA-ს მსოფლიო ჩემპიონატის გოლის გატანით, გრეგუარ მანსტერი ცდილობს შეინარჩუნოს ეს იმპულსი ამ თვის ORLEN 80-ე რალი პოლონეთში.</p>
+                </div>
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-20.jpg" alt="photo-20">
+                    <p>პარასკევი, 2024 წლის 7 ივნისი</p>
+                    <h3>ევანსი იტალიის გასვლიდან პოზიტივს იღებს</h3>
+                    <p>ტოიოტას-ს მძღოლი ელფინ ევანსი ამბობს, რომ გასულ კვირას Rally Italia Sardegna-ს რთული რელიიდან პოზიტივი მაინც შეეძლო.</p>
+                </div>
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-21.jpg" alt="photo-21">
+                    <p>პარასკევი, 2024 წლის 7 ივნისი</p>
+                    <h3>რალის ისტორიაში რამდენიმე უახლოესი დასრულების განმეორება</h3>
+                    <p>მიუხედავად იმისა, რომ რალი ხშირად განიხილება გამძლეობის სპორტად, გამარჯვების ეს ზღვარი არის ინტენსიური შეჯიბრის მთავარი მაგალითი, რომელიც განსაზღვრავს FIA-ს მსოფლიო რალის ჩემპიონატს.</p>
+                </div>
+                <div class="container_5_div_1_photos">
+                    <img src="/all_photo/photo-22.jpg" alt="photo-22">
+                    <p>ხუთ 6 ივნისი 2024 წ</p>
+                    <h3>ახალგაზრდა ნიჭი ანათებს WRC-ში, რადგან პაჯარი და სესკი ხაზს უსვამენ მომავალ თაობას</h3>
+                    <p>ნაბიჯი წინ და აწიე სამი პაჯარი.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- container 6 -->
+
+    <div class="container_6">
+        <h1>Join the Rally.TV Family!</h1>
+        <p>Sign up to the free Rally.TV newsletter to get the latest news and offers from the FIA World Rally Championship.</p>
+        <a href="/sign_up/index.html"><button  onclick="weit()">CLICK HERE TO SIGN UP</button></a>
+        <a href="/log_in/index.html"><button>CLICK HERE TO LOG IN</button></a>
+        <img src="/all_photo/photo-23.jpg" alt="photo-23">
+    </div>
+
+    <!-- container 6 georgian version -->
+
+    <div class="container_6_GE">
+        <h1>შეუერთდი Rally.TV-ის ოჯახს!</h1>
+        <p>დარეგისტრირდით უფასო Rally.TV-ის საინფორმაციო ბიულეტენში, რომ მიიღოთ უახლესი ამბები და შეთავაზებები FIA მსოფლიო რალის ჩემპიონატიდან.</p>
+        <a href="/sign_up/index.html"><button  onclick="weit()">დააწკაპუნეთ აქ, რომ დარეგისტრირდეთ</button></a>
+        <a href="/log_in/index.html"><button>დააწკაპუნეთ აქ შესასვლელად</button></a>
+        <img src="/all_photo/photo-23.jpg" alt="photo-23">
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer_1">
+            <img src="/all_photo/photo-24.png" alt="photo-24">
+            <img src="/all_photo/photo-25.png" alt="photo-25">
+            <img src="/all_photo/photo-26.png" alt="photo-26">
+            <img src="/all_photo/photo-27.png" alt="photo-27">
+            <img src="/all_photo/photo-28.png" alt="photo-28">
+            <img src="/all_photo/photo-29.png" alt="photo-29">
+            <img src="/all_photo/photo-30.png" alt="photo-30">
+            <img src="/all_photo/photo-31.png" alt="photo-31">
+            <img src="/all_photo/photo-32.png" alt="photo-32">
+            <img src="/all_photo/photo-33.png" alt="photo-33">
+            <img src="/all_photo/photo-34.png" alt="photo-34">
+            <img src="/all_photo/photo-35.png" alt="photo-35">
+        </div>
+
+        <div class="line_div"></div>
+
+        <div class="footer_2">
+            <h4>Contact Us</h4>
+            <h4>Terms & Conditions</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Legal Notice</h4>
+            <h4>Cookie Settings</h4>
+            <h4>Jobs</h4>
+            <h4>Accreditation</h4>
+            <h4>Media Room</h4>
+            <h4>Broadcast Guide</h4>
+            <h4>Partners & Advertising</h4>
+        </div>
+
+        <div class="footer_2_GE">
+            <h4>დაგვიკავშირდით</h4>
+            <h4>წესები და პირობები</h4>
+            <h4>Კონფიდენციალურობის პოლიტიკა</h4>
+            <h4>იურიდიული ცნობა</h4>
+            <h4>პარამეტრები</h4>
+            <h4>სამუშაო ადგილები</h4>
+            <h4>აკრედიტაცია</h4>
+            <h4>მედია ოთახი</h4>
+            <h4>მაუწყებლობის გზამკვლევი</h4>
+            <h4>პარტნიორები და რეკლამა</h4>
+        </div>
+
+        <div class="footer_3">
+            <p>© WRC Promoter GmbH 2014 - 2024</p>
+
+            <div class="footer_3_2">
+                <a href="https://www.facebook.com/WorldRally/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/officialwrc/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/@wrc"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://www.youtube.com/@wrc"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://x.com/OfficialWRC"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+
+        <!-- georgian version -->
+        <div class="footer_3_GE">
+            <p>© რალის პრომოუტერი 2014 - 2024 წ</p>
+
+            <div class="footer_3_2">
+                <a href="https://www.facebook.com/WorldRally/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/officialwrc/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/@wrc"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://www.youtube.com/@wrc"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://x.com/OfficialWRC"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+

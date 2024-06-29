@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    body{
+        background-color: #313131;
+    }
+}
+
+header{
+    min-width: 100%;
+    height: 65px;
+    background-color: #1e1e1e;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+// for responsive 
+    // for menu bar
+    #show_menu{
+        font-size: 3em;
+        color: white;
+        padding: 10px 40px;
+        display: none;
+    }
+    #photo_1_f_responsive{
+        display: none;
+    }
+    #search_1_f_responsive{
+        display: none;
+    }
+
+// 
+    nav{
+        display: flex;
+        
+        
+        .leftside_nav_bar{
+            display: flex;
+            
+
+            ul,li{
+                list-style: none;
+                display: flex;
+                color: white;
+                font-size: 1.1em;
+                margin: 10px 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+                // for live animation 
+                .live_animation{
+                    width: 7px;
+                    height: 7px;
+                    background-color: orangered;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -5px;
+                    left: 7px;
+                    animation: live_anime  infinite 1s;
+                    
+                }
+
+                @keyframes live_anime {
+                    from{
+                        opacity: 20%;
+                    }
+
+                    to{
+                        opacity: 100%;
+                        box-shadow: 1px 1px 1px 1px orangered;
+                    }
+                }
+            }
+
+            li:hover{
+                cursor: pointer;
+                color: orangered;
+            }
+
+            #photo_1{
+                width: 63px;
+                height: 25px;
+                margin: 20px 60px;
+            }
+        }
+
+        // georgian version
+        .leftside_nav_bar_GE{
+            display: none;
+            
+
+            ul,li{
+                list-style: none;
+                display: flex;
+                color: white;
+                font-size: 1.1em;
+                margin: 10px 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+                // for live animation 
+                .live_animation{
+                    width: 7px;
+                    height: 7px;
+                    background-color: orangered;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -5px;
+                    left: 7px;
+                    animation: live_anime  infinite 1s;
+                    
+                }
+
+                @keyframes live_anime {
+                    from{
+                        opacity: 20%;
+                    }
+
+                    to{
+                        opacity: 100%;
+                        box-shadow: 1px 1px 1px 1px orangered;
+                    }
+                }
+            }
+
+            li:hover{
+                cursor: pointer;
+                color: orangered;
+            }
+
+            #photo_1{
+                width: 63px;
+                height: 25px;
+                margin: 20px 60px;
+            }
+        }
+
+        // right side
+        .rightside_nav_bar{
+            margin-left: 200px;
+            display: flex;
+
+            button{
+                width: 150px;
+                height: 30px;
+                margin: 17px 0px;
+                color: white;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: orangered;
+                border-radius: 7px;
+                border: none;
+                transition: 0.3s;
+            }
+            button:hover{
+                cursor: pointer;
+                opacity: 70%;
+            }
+        }
+
+        // right side georgian version
+        .rightside_nav_bar_GE{
+            margin-left: 200px;
+            display: none;
+
+            button{
+                width: 150px;
+                height: 30px;
+                margin: 17px 0px;
+                color: white;
+                font-weight: bold;
+                font-size: 1.1em;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: orangered;
+                border-radius: 7px;
+                border: none;
+                transition: 0.3s;
+            }
+            button:hover{
+                cursor: pointer;
+                opacity: 70%;
+            }
+        }
+
+        // change lenguage styles
+        #change_language{
+            width: 60px;
+            height: 40px;
+            margin: 12px 30px;
+            display: block;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 5px;
+            background-color: #313131;
+            color: white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: orangered solid 2px;
+            cursor: pointer;
+        }
+    }
+
+    // search in header
+    
+    #search_1{
+        font-size: 1.8em;
+        color: white;
+        margin: 17px 30px;
+    }
+    #search_1:hover{
+        color: orangered;
+        cursor: pointer;
+    }
+    #button_for_close{
+        width: 30px;
+        height: 30px;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 300px;
+        z-index: 2;
+        background-color: #313131;
+        border: none;
+        border-radius: 30px;
+        display: none;
+        cursor: pointer;
+        animation-duration: 2s;
+        animation-name: close_button_animation;
+    }
+    #button_for_close:hover{
+        color: orangered;
+        transform: rotate(90deg);
+    }
+    //    close button animation
+
+    @keyframes close_button_animation {
+        to{
+            position: absolute;
+            top: 15px;
+            right: 300px;
+        }
+        from{
+            position: absolute;
+            top: 15px;
+            right: 100px;
+        }
+    }
+
+    // doted and his dive
+    #user_1{
+        font-size: 1.8em;
+        color: white;
+        margin: 17px 0px ;
+    }
+    #user_1:hover{
+        color: orangered;
+        cursor: pointer;
+    }
+    #user_div{
+        width: 275px;
+        height: 120px;
+        background-color: #1e1e1e;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        top: 70px;
+        right: 10%;
+        display: none;
+        animation: user_ophen 1s;
+
+        @keyframes user_ophen {
+            
+            from{
+                opacity: 0%;
+            }
+
+            to{
+                opacity: 100%   ;
+            }
+            
+        }
+      
+        .user_d{
+            font-size: 1.1em;
+            list-style: none;
+            color: white;
+            padding: 15px 50px;
+
+            i{
+                color: orangered;
+                font-size: 1.2em;
+            }
+
+            span{
+                padding-left: 20px;
+            }
+            
+        }
+        .user_d:hover{
+            color: orangered;
+            cursor: pointer;
+        }
+     } 
+
+    // for serch
+    #hearder_search{
+        position: absolute;
+        top: 15px;
+        right: 300px;
+        z-index: 1;
+        width: 300px;
+        height: 30px;
+        color: black;
+        border: none;
+        font-size: 1.1em;
+        display: none;
+        animation-duration: 2s;
+        animation-name: search_animation;
+    }
+
+   @keyframes search_animation {
+    
+    to{
+        position: absolute;
+        top: 15px;
+        right: 300px;
+    }
+    from{
+        position: absolute;
+        top: 15px;
+        right: 100px;
+    }
+   }
+}
+
+
+// for responsive
+
+    #right_side_nav_responsive{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 20%;
+        max-height: 100vh;
+        background-color: #1e1e1e;
+        overflow: scroll;
+        border: 1px black solid;
+        display: none;
+
+        #nav_close_bt{
+            position: sticky;
+            top: 30px;
+            left: 280px;
+            width: 30px;
+            height: 30px;
+            color: white;
+            background-color: #1e1e1e;
+            border: none;
+        }
+        #nav_close_bt:hover{
+            color: orangered;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        ul,li{
+            padding: 30px 10px;
+            list-style: none;
+            color: white;
+            font-weight: bold;
+
+
+            .span_for_icon{
+                color: orangered;
+                font-size: 1.5em;
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+
+// container 1
+
+.container_1{
+    width: 60%;
+    min-height: 500px;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border: solid 1px white;
+    
+
+
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px 100px;
+        color: orangered;
+    }
+
+    h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 1.1em;
+        padding: 20px 100px;
+    }
+
+    p{
+        color: white;
+        font-size: 1.1em;
+        margin: 0px 25%;
+    }
+
+    input{
+        width: 50%;
+        height: 30px;
+        margin: 10px 25%;
+        font-size: 1.1em;
+        color: #313131;
+
+    }
+
+    button{
+        width: 25%;
+        height: 30px;
+        margin: 40px 35%;
+        font-size: 1.1em;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: orangered;
+        cursor: pointer;
+    }
+}
+
+
+// container 1 georgian version
+
+.container_1_GE{
+    width: 60%;
+    min-height: 500px;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border: solid 1px white;
+    display: none;
+
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px 100px;
+        color: orangered;
+    }
+
+    h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 1.1em;
+        padding: 20px 100px;
+    }
+
+    p{
+        color: white;
+        font-size: 1.1em;
+        margin: 0px 25%;
+    }
+
+    input{
+        width: 50%;
+        height: 30px;
+        margin: 10px 25%;
+        font-size: 1.1em;
+        color: #313131;
+    }
+
+    button{
+        width: 27%;
+        height: 50px;
+        margin: 40px 35%;
+        font-size: 1.1em;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: orangered;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+// responsive design for tablet //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+@media only screen and (max-width: 1230px) {
+
+    header {
+        min-width: 100%;
+        height: 65px;
+        background-color: #1e1e1e;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        display: flex;
+    
+        #show_menu{
+            font-size: 3em;
+            color: white;
+            padding: 10px 40px;
+            display: block;
+        }
+    
+        #photo_1_f_responsive{
+            display: flex;
+            position: relative;
+            top: 20px;
+            left: 35%;
+            transform: translateX(-50% );
+            width: 100px;
+            height: 30px;
+        }
+    
+        #search_1_f_responsive{
+            font-size: 2em;
+            color: white;
+            display: block;
+            position: relative;
+            top: 20px;
+            left: 65%;
+        }
+        
+        
+        nav{
+            display: none;
+        }
+    
+    }
+}

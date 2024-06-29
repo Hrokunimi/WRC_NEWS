@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calendar | WRC.com</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- for responsive  -->
+        <i class='bx bx-menu' id="show_menu" onclick="responsive_nav_bar()"></i>
+        <img src="/all_photo/photo_1.png" alt="img-1-for-responcive" id="photo_1_f_responsive">
+        <i class='bx bx-search-alt-2' id="search_1_f_responsive"></i>
+        
+        <!--  -->
+        <nav>
+            <!-- left side -->
+            <div class="leftside_nav_bar">
+                <a href="/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                <ul>
+                    <a href="/index.html"><li>Home</li></a>
+                    <a href="/news/index.html"><li>News</li></a>
+                    <li style="color: orangered;">Calendar</li>
+                    <a href="/results/index.html"><li>Result & Standings</li></a>
+                    <li>Team & Drivers</li>
+                    <li>Live Timing</li>
+                    <li>Gaming</li>
+                    <li>Watch</li>
+                </ul>
+            </div>
+                        <!-- left side georgian lenguage -->
+                        <div class="leftside_nav_bar_GE">
+                            <a href="/mian_page/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                            <ul>
+                                <li style="color: orangered;">მთავარი</li>
+                                <a href="/news/index.html"><li >სიახლეები</li></a>
+                                <a href="/calendar/index.html"><li >Კალენდარი</li></a>
+                                <a href="/results/index.html"><li>შედეგიები</li></a>
+                                <li>გუნდები </li>
+                                <li>პირდაპირი ეთერი</li>
+                                <li>თამაში</li>
+                                <li>ყურება</li>
+                            </ul>
+                        </div>
+            <!-- right side -->
+            <div class="rightside_nav_bar">
+                <a href=""><img src="/all_photo/photo_2.png" alt="photo_2" id="photo_2"></a>
+                <!-- for lenguage chose -->
+                <select name="lenguage" id="change_language">
+                    <option value="English">EN</option>
+                    <option value="Georgian">GE</option>
+                </select>
+                <i class='bx bx-search-alt-2' id="search_1" onclick="search_click()"></i>
+                <i class='bx bx-dots-vertical-rounded' id="dots_1" onclick="dote_div()"></i>
+            </div>
+            <input type="text" id="hearder_search" placeholder="Search Drivers, Teams and more... "> 
+            <button id="button_for_close" onclick="close_X_1()">X</button>
+            <!-- for search  -->
+        </nav>
+
+        </div>
+        <!-- for right siede 3 doted icon -->
+        <div id="doted_div">
+            <ul>
+                <li class="doted_d">About WRC</li>
+                <li class="doted_d">Accreditation</li>
+                <li class="doted_d">Beyond Rally</li>
+                <li class="doted_d">Broudcast Guide</li>
+                <li class="doted_d">Championship</li>
+                <li class="doted_d">Factbook</li>
+                <li class="doted_d">FIA</li>
+                <li class="doted_d">Partners</li>
+                <li class="doted_d">Podcasts</li>
+                <li class="doted_d">WRC History</li>
+                <li class="doted_d">WRC Promoter</li>
+            </ul>
+        </div>
+    </header>
+    <!-- for responsive nav bar -->
+    <div id="right_side_nav_responsive">
+        <button id="nav_close_bt" onclick="nav_close()">X</button>
+        <ul>
+            <li><span class="span_for_icon"><i class='bx bxs-home'></i></span>Home</li>
+            <li><span class="span_for_icon"><i class='bx bx-menu-alt-left'></i></span>News</li>
+            <li><span class="span_for_icon"><i class='bx bx-calendar'></i></span>Calendar</li>
+            <li><span class="span_for_icon"><i class='bx bxs-trophy' ></i></span>Results & Standings</li>
+            <li><span class="span_for_icon"><i class='bx bxs-car'></i></span>Teams & Drivers</li>
+            <li><span class="span_for_icon"><i class='bx bx-time-five'></i></span>Live Timing</li>
+            <li>Gaming</li>
+            <li>Watch </li>
+            <li>About WRC</li>
+            <li>Accreditation</li>
+            <li>Beyond Rally</li>
+            <li>Broadcast Guide</li>
+            <li>Championships</li>
+            <li>Factbook</li>
+            <li>FIA</li>
+            <li>Partners</li>
+            <li>Podcasts</li>
+            <li>WRC History </li>
+            <li>WRC Promoter</li>
+        </ul>
+    </div>
+    <!--  -->
+
+    <div class="header_2">
+        <h1>WRC 2024 Calendar</h1>
+
+        <div class="header_2_right_side">
+            <div id="change_display" onclick="change_display()">
+                <div id="change_display_ball"></div>
+            </div>
+            <h4>List Overview</h4>
+            <div class="header_2_calendar"><i class='bx bx-calendar'></i><P>SYNC TO CALENDAR</P></div>
+        </div>
+    </div>
+            <!-- gorgian version -->
+            <div class="header_2_GE">
+                <h1>რალის 2024 კალენდარი</h1>
+        
+                <div class="header_2_right_side">
+                    <div id="change_display" onclick="change_display()">
+                        <div id="change_display_ball"></div>
+                    </div>
+                    <h4>სიის მიმოხილვა</h4>
+                    <div class="header_2_calendar"><i class='bx bx-calendar'></i><P>სინქრონიზაცია კალენდართან</P></div>
+                </div>
+            </div>
+
+    <!-- main container -->
+
+    <main>
+
+        <!-- container 1 -->
+        <div id="main_container_1"> 
+            <img src="/all_photo/photo-63.jpg" alt="photo-63">
+
+            <!-- table -->
+
+            <table>
+                <tr>
+                    <td style="color: #384464; font-size: 1.8em; font-weight: bold; padding: 5px;">Round</td>
+                    <td style="color: #384464; font-size: 1.8em; font-weight: bold; padding: 5px;">Event</td>
+                    <td style="color: #384464; font-size: 1.8em; font-weight: bold; padding: 5px;">Date</td>
+                </tr>
+                <tr>
+                    <td class="number_td">1</td>
+                    <td class="event_td">Rallye Monte-Carlo</td>
+                    <td class="date_td">25 – 28 January</td>
+                </tr>
+                <tr>
+                    <td class="number_td">2</td>
+                    <td class="event_td">Rally Sweden</td>
+                    <td class="date_td">15 – 18 February</td>
+                </tr>
+                <tr>
+                    <td class="number_td">3</td>
+                    <td class="event_td">Safari Rally Kenya</td>
+                    <td class="date_td">28 – 31 March</td>
+                </tr>
+                <tr>
+                    <td class="number_td">4</td>
+                    <td class="event_td">Croatia Rally</td>
+                    <td class="date_td">18 – 21 April</td>
+                </tr>
+                <tr>
+                    <td class="number_td">5</td>
+                    <td class="event_td">Vodafone Rally de Portugal</td>
+                    <td class="date_td">9 – 12 May</td>
+                </tr>
+                <tr>
+                    <td class="number_td">6</td>
+                    <td class="event_td">Rally Italia Sardegna</td>
+                    <td class="date_td">30 May – 2 June</td>
+                </tr>
+                <tr>
+                    <td class="number_td">7</td>
+                    <td class="event_td">ORLEN 80th Rally Poland</td>
+                    <td class="date_td">27 – 30 June</td>
+                </tr>
+                <tr>
+                    <td class="number_td">8</td>
+                    <td class="event_td">Tet Rally Latvia</td>
+                    <td class="date_td">18 – 21 July</td>
+                </tr>
+                <tr>
+                    <td class="number_td">9</td>
+                    <td class="event_td">Secto Rally Finland</td>
+                    <td class="date_td">1 – 4 August</td>
+                </tr>
+                <tr>
+                    <td class="number_td">10</td>
+                    <td class="event_td">EKO Acropolis Rally Greece</td>
+                    <td class="date_td">5 – 8 September</td>
+                </tr>
+                <tr>
+                    <td class="number_td">11</td>
+                    <td class="event_td">Rally Chile Bio Bío</td>
+                    <td class="date_td">26 – 29 September</td>
+                </tr>
+                <tr>
+                    <td class="number_td">12</td>
+                    <td class="event_td">Central European Rally</td>
+                    <td class="date_td">17 – 20 October</td>
+                </tr>
+                <tr>
+                    <td class="number_td">13</td>
+                    <td class="event_td">FORUM8 Rally Japan</td>
+                    <td class="date_td">21 – 24 November</td>
+                </tr>
+            </table>
+
+            <!-- video -->
+    
+            <video src="/all_video/Next Up_ WRC Vodafone Rally de Portugal 2024 🤩 🇵🇹.mp4" autoplay loop muted></video>
+        </div>
+
+        
+        <!-- container 1 georgian version-->
+        <div id="main_container_1_GE"> 
+            <img src="/all_photo/photo-63.jpg" alt="photo-63">
+
+            <!-- table -->
+
+            <table>
+                <tr>
+                    <td style="color: #384464; font-size: 1.8em; font-weight: bold; padding: 5px;">რაუნდი</td>
+                    <td style="color: #384464; font-size: 1.8em; font-weight: bold; padding: 5px;">ღონისძიება</td>
+                    <td style="color: #384464; font-size: 1.8em; font-weight: bold; padding: 5px;">თარიღი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">1</td>
+                    <td class="event_td">რალი მონტე-კარლო</td>
+                    <td class="date_td">25 – 28 იანვარი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">2</td>
+                    <td class="event_td">რალი შვედეთი</td>
+                    <td class="date_td">15 – 18 თებერვალი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">3</td>
+                    <td class="event_td">რალი კენიაში</td>
+                    <td class="date_td">28 – 31 მარტი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">4</td>
+                    <td class="event_td">რალი ხორვატია</td>
+                    <td class="date_td">18 – 21 აპრილი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">5</td>
+                    <td class="event_td">რალი პორტუგალია</td>
+                    <td class="date_td">9 – 12 მაისი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">6</td>
+                    <td class="event_td">რალი იტალია</td>
+                    <td class="date_td">30 May – 2 ივნისი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">7</td>
+                    <td class="event_td">პოლონეთის რალი</td>
+                    <td class="date_td">27 – 30 ივნისი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">8</td>
+                    <td class="event_td">ლიტვა რალი</td>
+                    <td class="date_td">18 – 21 ივლისი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">9</td>
+                    <td class="event_td">ფინეთის რალი</td>
+                    <td class="date_td">1 – 4 აგვისტო</td>
+                </tr>
+                <tr>
+                    <td class="number_td">10</td>
+                    <td class="event_td">საბერძნეთის რალი</td>
+                    <td class="date_td">5 – 8 სექტემბერი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">11</td>
+                    <td class="event_td">ჩილეს რალი</td>
+                    <td class="date_td">26 – 29 სექტემბერი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">12</td>
+                    <td class="event_td">ცენტრალური ევროპის რალი</td>
+                    <td class="date_td">17 – 20 ოქტომბერი</td>
+                </tr>
+                <tr>
+                    <td class="number_td">13</td>
+                    <td class="event_td">იაპონიის რალი</td>
+                    <td class="date_td">21 – 24 ნოემბერი</td>
+                </tr>
+            </table>
+
+            <!-- video -->
+    
+            <video src="/all_video/Next Up_ WRC Vodafone Rally de Portugal 2024 🤩 🇵🇹.mp4" autoplay loop muted></video>
+        </div>
+
+
+
+        <!-- container 2 -->
+
+    <div id="main_container_2">
+        
+        <div class="container_2">
+    
+            <div id="container_2_1">
+                <div class="container_divs">
+                    <img src="/all_photo//photo_6.jpg" alt="photo-6">
+                    <p>WED 24  - SUN 28 JAN 2024</p>
+                    <h3>Rallye Monte-Carlo</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-7.jpg" alt="photo-7">
+                    <p>THU 15  - SUN 18 FEB 2024</p>
+                    <h3>WRC Rally Sweden </h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-8.jpg" alt="photo-8">
+                    <p>WED 27  - SUN 31 MAR 2024</p>
+                    <h3>WRC Safari Rally Kenya</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-9.jpg" alt="photo-9">
+                    <p>THU 18  - SUN 21 APR 2024</p>
+                    <h3>WRC Croatia Rally</h3>
+                </div>
+            </div>
+        </div>
+        <!-- container 3 -->
+
+        <div class="container_3">
+    
+            <div id="container_3_1">
+                <div class="container_divs">
+                    <img src="/all_photo/photo-10.jpg" alt="photo-10">
+                    <p>THU 9  - SUN 12 MAY 2024</p>
+                    <h3>WRC Vodafone Rally de Portugal</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-11.jpg" alt="photo-11">
+                    <p>THU 30  - SUN 2 JUN 2024</p>
+                    <h3>WRC Rally Italia Sardegna</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-12.jpg" alt="photo-12">
+                    <p>THU 27  - SUN 30 JUN 2024</p>
+                    <h3>WRC ORLEN 80th Rally Poland</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-13.jpg" alt="photo-13">
+                    <p>THU 18  - SUN 21 JUL 2024</p>
+                    <h3>WRC Tet Rally Latvia</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 4 -->
+
+        <div class="container_4">
+    
+            <div id="container_4_1">
+                <div class="container_divs">
+                    <img src="/all_photo/photo-64.jpg" alt="photo-64.jpg">
+                    <p>THU 1  - SUN 4 AUG 2024</p>
+                    <h3>WRC Secto Rally Finland</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-65.jpg" alt="photo-65">
+                    <p>THU 5  - SUN 8 SEP 2024</p>
+                    <h3>WRC EKO Acropolis Rally Greece</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-66.jpg" alt="photo-66">
+                    <p>THU 26  - SUN 29 SEP 2024</p>
+                    <h3>WRC Rally Chile Bio Bío</h3>
+                </div>
+                <div class="container_divs">
+                    <img src="/all_photo/photo-67.jpg" alt="photo-67">
+                    <p>THU 17  - SUN 20 OCT 2024</p>
+                    <h3>WRC Central European Rally</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer_1">
+            <img src="/all_photo/photo-24.png" alt="photo-24">
+            <img src="/all_photo/photo-25.png" alt="photo-25">
+            <img src="/all_photo/photo-26.png" alt="photo-26">
+            <img src="/all_photo/photo-27.png" alt="photo-27">
+            <img src="/all_photo/photo-28.png" alt="photo-28">
+            <img src="/all_photo/photo-29.png" alt="photo-29">
+            <img src="/all_photo/photo-30.png" alt="photo-30">
+            <img src="/all_photo/photo-31.png" alt="photo-31">
+            <img src="/all_photo/photo-32.png" alt="photo-32">
+            <img src="/all_photo/photo-33.png" alt="photo-33">
+            <img src="/all_photo/photo-34.png" alt="photo-34">
+            <img src="/all_photo/photo-35.png" alt="photo-35">
+        </div>
+
+        <div class="line_div"></div>
+
+        <div class="footer_2">
+            <h4>Contact Us</h4>
+            <h4>Terms & Conditions</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Legal Notice</h4>
+            <h4>Cookie Settings</h4>
+            <h4>Jobs</h4>
+            <h4>Accreditation</h4>
+            <h4>Media Room</h4>
+            <h4>Broadcast Guide</h4>
+            <h4>Partners & Advertising</h4>
+        </div>
+
+        <div class="footer_2_GE">
+            <h4>დაგვიკავშირდით</h4>
+            <h4>წესები და პირობები</h4>
+            <h4>Კონფიდენციალურობის პოლიტიკა</h4>
+            <h4>იურიდიული ცნობა</h4>
+            <h4>პარამეტრები</h4>
+            <h4>სამუშაო ადგილები</h4>
+            <h4>აკრედიტაცია</h4>
+            <h4>მედია ოთახი</h4>
+            <h4>მაუწყებლობის გზამკვლევი</h4>
+            <h4>პარტნიორები და რეკლამა</h4>
+        </div>
+
+        <div class="footer_3">
+            <p>© WRC Promoter GmbH 2014 - 2024</p>
+
+            <div class="footer_3_2">
+                <a href="https://www.facebook.com/WorldRally/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/officialwrc/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/@wrc"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://www.youtube.com/@wrc"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://x.com/OfficialWRC"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+
+        <!-- georgian version -->
+        <div class="footer_3_GE">
+            <p>© რალის პრომოუტერი 2014 - 2024 წ</p>
+
+            <div class="footer_3_2">
+                <a href="https://www.facebook.com/WorldRally/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/officialwrc/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/@wrc"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://www.youtube.com/@wrc"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://x.com/OfficialWRC"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/calendar/app.js"></script>
+</body>
+</html>

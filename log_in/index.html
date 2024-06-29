@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>SIGH IN</title>
+</head>
+<body>
+    <header>
+
+        <!-- for responsive  -->
+        <i class='bx bx-menu' id="show_menu" onclick="responsive_nav_bar()"></i>
+        <img src="/all_photo/photo_1.png" alt="img-1-for-responcive" id="photo_1_f_responsive">
+        <i class='bx bx-search-alt-2' id="search_1_f_responsive"></i>
+        
+        <!--  -->
+        <nav>
+            <!-- left side -->
+            <div class="leftside_nav_bar">
+                <a href="/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                <ul>
+                    <a href="/index.html"><li>Home</li></a>
+                    <li>Live TV <div class="live_animation"></div></li>
+                    <li>TV Guide</li>
+                    <li>On Demand</li>
+                    <li>Archive</li>
+                    <li>Calendar</li>
+                    <li>Onboards</li>
+                </ul>
+            </div>
+            <!-- left side georgian version -->
+            <div class="leftside_nav_bar_GE">
+                <a href="/index.html"><img src="/all_photo/photo_1.png" alt="photo_1" id="photo_1"></a>
+                <ul>
+                    <a href="/index.html"><li>მთავარი</li></a>
+                    <li>პირდაპირი<div class="live_animation"></div></li>
+                    <li>გზამკვლევი</li>
+                    <li>საჭიროება</li>
+                    <li>არქივი</li>
+                    <li>Კალენდარი</li>
+                    <li>ბორტებზე</li>
+                </ul>
+            </div>
+
+            <!-- right side -->
+            <div class="rightside_nav_bar">
+                <button id="sub_button">SUBSCRIBE</button>
+                <i class='bx bx-search-alt-2' id="search_1" onclick="search_click()"></i>
+                <i class='bx bx-user-circle' id="user_1" onclick="user_click()" ></i>
+            </div>
+                    <!-- right side georgian version-->
+                    <div class="rightside_nav_bar_GE">
+                        <button id="sub_button">გამოწერა</button>
+                        <i class='bx bx-search-alt-2' id="search_1" onclick="search_click()"></i>
+                        <i class='bx bx-user-circle' id="user_1" onclick="user_click()" ></i>
+                    </div>
+
+            <input type="text" id="hearder_search" placeholder="Search Drivers, Teams and more... "> 
+            <button id="button_for_close" onclick="close_X_1()">X</button>
+                 <!-- for lenguage chose -->
+                <select name="lenguage" id="change_language">
+                    <option value="English">EN</option>
+                    <option value="Georgian">GE</option>
+                </select>
+            <!-- for search  -->
+        </nav>
+
+        </div>
+        <!-- user div -->
+        <div id="user_div">
+            <ul>
+                <li class="user_d"> <i class='bx bx-cog' ></i><span>About WRC</span></li>
+                <li class="user_d"><i class='bx bx-log-in' ></i><span>Accreditation</span></li>
+            </ul>
+        </div>
+    </header>
+
+        <!-- for responsive nav bar -->
+        <div id="right_side_nav_responsive">
+            <button id="nav_close_bt" onclick="nav_close()">X</button>
+            <ul>
+                <li><span class="span_for_icon"><i class='bx bxs-home'></i></span>Home</li>
+                <li><span class="span_for_icon"><i class='bx bx-movie-play' ></i></span>Live TV </li>
+                <li><span class="span_for_icon"><i class='bx bx-desktop'></i></span>TV Guide</li>
+                <li><span class="span_for_icon"><i class='bx bx-archive'></i></span>Archivve</li>
+                <li><span class="span_for_icon"><i class='bx bx-calendar'></i></span>Calendar</li>
+                <li><span class="span_for_icon"><i class='bx bx-cog' ></i></span>Settings</li>
+                <li><span class="span_for_icon"><i class='bx bx-log-in' ></i></span>Sign Up / Log In</li>
+            </ul>
+        </div>
+        <!--  -->
+
+        <!-- container 1 -->
+
+        <div class="container_1">
+            <h1>JOIN THE RALLY.TV FAMILY!</h1>
+            <h3>Sign up to our newsletter and stay up to date with all the latest news and offers from WRC, ERC, WorldRX, Rally.TV and our partners.</h3><br><br>
+            <p>Enter Email</p>
+            <input type="email" placeholder="Enter your email">
+            <p>Enter Password</p>
+            <input type="password" placeholder="Enter your password">          
+           <button>LOG IN</button>
+        </div>
+
+        <div class="container_1_GE">
+            <h1>შემოუერთდი RALLY.TV ოჯახს!</h1>
+            <h3>დარეგისტრირდით ჩვენს საინფორმაციო სიახლეებში და იყავით უახლესი ამბებისა და შეთავაზებების შესახებ WRC, ERC, WorldRX, Rally.TV და ჩვენი პარტნიორებისგან.</h3><br><br>
+            <p>ელექტრონული მისამართი</p>
+            <input type="email" placeholder="შეიყვანეთ თქვენი ელ.ფოსტის მისამართი" id="email_input">
+            <p>შეიყვანეთ პაროლი</p>
+            <input type="password" placeholder="Შეიყვანეთ თქვენი პაროლი" id="password_input">
+            <button>შესვლა</button>
+    <script src="/log_in/app.js"></script>
+</body>
+</html>
+
+
